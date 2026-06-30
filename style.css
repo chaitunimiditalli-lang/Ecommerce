@@ -1,0 +1,145 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f8fafc;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:#2563eb;
+}
+
+ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+a{
+text-decoration:none;
+color:#333;
+}
+
+.hero{
+height:90vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,.5),
+rgba(0,0,0,.5)
+),
+url("https://images.unsplash.com/photo-1441986300917-64674bd600d8");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:24px;
+margin-bottom:20px;
+}
+
+.btn{
+padding:15px 30px;
+background:white;
+color:#2563eb;
+border-radius:10px;
+font-weight:bold;
+}
+
+.featured,
+.container{
+padding:50px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:25px;
+}
+
+.product-card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+text-align:center;
+padding-bottom:20px;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.product-card h3{
+margin:15px 0;
+}
+
+.product-card p{
+margin-bottom:15px;
+}
+
+button{
+padding:10px 15px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+#search{
+width:100%;
+padding:12px;
+margin:20px 0;
+}
+
+.filters{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
